@@ -1,0 +1,48 @@
+/*-------------------------------------------------------------------------------
+  1. Global | 1.2 Buttons
+-------------------------------------------------------------------------------*/
+
+.btn {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    display: inline-block;
+    color: #fffefe;
+    border-radius: 6px;
+    padding: 10px 25px 10px 25px;
+    &.btn-default {
+        background: $button_default_bg;
+        border: 1px solid $button_default_border;
+        &:hover,
+        &:focus {
+            background: darken($button_default_bg, 5%);
+            border:1px solid #059a9d;
+            color: #fff;
+        }
+    }
+    &.btn-primary {
+        background: $button_primary_bg;
+        border: 1px solid $button_primary_border;
+        color:$button_primary_color;
+        
+        &:hover,
+        &:focus {
+            background: $button_primary_color;
+            border: 1px solid $button_primary_color;
+            color:#fff;
+        }
+    }
+    &.btn-secondary {
+        background: $button_secondary_bg;
+        border: 1px solid $button_secondary_border;
+        color:$button_secondary_color;
+        padding: 10px 15px 10px 15px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        &:hover,
+        &:focus {
+            background: $button_secondary_hover_bg;
+            border: 1px solid $button_secondary_hover_bg;
+        }
+    }
+}

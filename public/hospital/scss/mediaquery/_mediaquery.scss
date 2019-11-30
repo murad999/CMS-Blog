@@ -1,0 +1,36 @@
+/*-------------------------------------------------------------------------------
+ 8. Mediaquery
+-------------------------------------------------------------------------------*/
+@media (max-width: 1200px) {
+    @import "global/global-lg";
+    
+    
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    @import "global/global-md";
+    @import "pages/about-page/about-page-md";
+    @import "pages/home-page-v2/home-page-v2-md";
+    
+    
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    @import "global/global-sm";
+    @import "pages/home-page-v2/home-page-v2-sm";
+    @import "pages/about-page/about-page-sm";
+     @import "pages/department-page/department-page-sm";
+    @import "pages/services-page/services-page-sm";
+    @import "pages/blog-gird-page/blog-gird-sm";
+    
+}
+
+@media (min-width: 100px) and (max-width: 767px) {
+    @import "global/global-xs";
+    @import "pages/about-page/about-page-xs";
+    @import "pages/home-page-v2/home-page-v2-xs";
+    @import "pages/department-page/department-page-xs";
+    @import "pages/services-page/services-page-xs";
+    @import "pages/blog-gird-page/blog-gird-xs";
+    
+}

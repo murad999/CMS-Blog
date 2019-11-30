@@ -1,0 +1,153 @@
+/* -------------------------------------
+3 Global Sections - Side Bar Widgets
+---------------------------------------- */
+
+/* --------------------
+3.14 Section - Side Bar Widgets
+----------------------- */
+.sidebar {
+    h4 {
+        margin-bottom: 34px;
+        font-weight: 600;
+        color: #505050;
+    }
+    ul {
+        li {
+            padding-bottom: 15px;
+            a {
+                font-size: 15px;
+                color: #555555;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 400;
+                -webkit-transition: .2s linear;
+                -o-transition: .2s linear;
+                transition: .2s linear;
+                i {
+                    font-size: 15px;
+                    vertical-align: middle;
+                    margin-right: 5px;
+                    color: #555555;
+                }
+                &:hover {
+                    color: $primary_color;
+                    margin-left: 10px;
+                    -webkit-transition: .2s linear;
+                    -o-transition: .2s linear;
+                    transition: .2s linear;
+                    & i {
+                        color: $primary_color;
+                    }
+                }
+            }
+        }
+    }
+    .search-bar {
+        .input-group {
+            .form-control {
+                border: 1px solid #bbbbbb;
+                height: 45px;
+                &:focus {
+                    box-shadow: none;
+                    border: 1px solid $primary_color;
+                }
+            }
+            .form-control::-webkit-input-placeholder {
+                /* Chrome/Opera/Safari */
+                font-family: 'Poppins', sans-serif;
+                font-weight: 400;
+                color: #606060;
+                font-size: 15px;
+            }
+            .form-control::-moz-placeholder {
+                /* Firefox 19+ */
+                font-family: 'Poppins', sans-serif;
+                font-weight: 400;
+                color: #606060;
+                font-size: 15px;
+            }
+            .form-control:-ms-input-placeholder {
+                /* IE 10+ */
+                font-family: 'Poppins', sans-serif;
+                font-weight: 400;
+                color: #606060;
+                font-size: 15px;
+            }
+            .form-control:-moz-placeholder {
+                /* Firefox 18- */
+                font-family: 'Poppins', sans-serif;
+                font-weight: 400;
+                color: #606060;
+                font-size: 15px;
+            }
+            .input-group-btn {
+                .btn-search {
+                    padding: 11px 15px;
+                    background: $primary_color;
+
+                    i {
+                        font-size: 18px;
+                    }
+                    &:hover {
+                        i {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .category-widget {
+        margin-top: 65px;
+    }
+    .recent-post-widget {
+        margin-top: 35px;
+        .recent-post-list {
+            padding-bottom: 25px;
+            figure {
+                overflow: hidden;
+                img {
+                    margin-right: 20px;
+                    cursor: pointer;
+                    -webkit-transform: scale(1);
+                    transform: scale(1);
+                    -webkit-transition: .3s ease-in-out;
+                    transition: .3s ease-in-out;
+                }
+            }
+
+            h5 {
+                margin-bottom: 0px;
+                a {
+                    font-weight: 500;
+                    color: #555555;
+                }
+            }
+            span {
+                a {
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 300;
+                    font-size: 14px;
+                    color: #606060;
+                }
+            }
+            &:hover {
+                a {
+                    color: $primary_color;
+                }
+                img {
+                    -webkit-transform: scale(1.2);
+                    -ms-transform: scale(1.2);
+                    -o-transform: scale(1.2);
+                    transform: scale(1.2);
+                }
+
+            }
+        }
+    }
+    .archives-widget {
+        margin-top: 42px;
+    }
+    .tags-widget {
+        margin-top: 38px;
+    }
+}

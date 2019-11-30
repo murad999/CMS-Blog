@@ -1,0 +1,71 @@
+/* -------------------------------------
+3 Global Sections - Commen Form Group
+---------------------------------------- */
+
+/* --------------------
+3.21 Section - Commen Form Group
+----------------------- */
+
+.form-group {
+    margin-bottom: 0px;
+    min-height: 70px;
+    .form-control {
+        background: transparent;
+        border: 1px solid #c5c5c5;
+        height: 45px;
+        font-size: 15px;
+        font-family: 'Source Sans Pro', sans-serif;
+        letter-spacing: 1px;
+        font-weight: 400;
+        border-radius: 5px;
+        box-shadow: none;
+        padding-left: 12px;
+        padding-right: 0px;
+        &.message-area {
+            height: auto;
+            max-width: 850px;
+        }
+        &:focus {
+            border: 1px solid $primary_color;
+        }
+    }
+    .input-group-addon {
+        background: #dddddd;
+        border: 1px solid #dddddd;
+        width: auto;
+        position: absolute;
+        top: 0;
+        right: 14px;
+        height: 45px;
+        border-bottom-right-radius: 5px !important;
+        border-top-right-radius: 5px !important;
+        color: #5a5656;
+        i {
+            vertical-align: middle;
+            padding-top: 10px;
+        }
+    }
+    &.has-feedback .validate-right-icon .form-control-feedback {
+        right: 40px;
+        top: 5px;
+    }
+    .form-control::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+        color: #606060;
+    }
+    .form-control::-moz-placeholder {
+        /* Firefox 19+ */
+        color: #606060;
+    }
+    .form-control:-ms-input-placeholder {
+        /* IE 10+ */
+        color: #606060;
+    }
+    .form-control:-moz-placeholder {
+        /* Firefox 18- */
+        color: #606060;
+    }
+    .btn {
+        font-weight: 600;
+    }
+}

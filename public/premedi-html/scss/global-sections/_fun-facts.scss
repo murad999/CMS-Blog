@@ -1,0 +1,28 @@
+/* -------------------------------------
+3 Global Sections - Fun Facts
+---------------------------------------- */
+
+/* --------------------
+3.12 Section - Fun Facts
+----------------------- */
+.fun-facts {
+    background: url("../images/home-v1-tab.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    .layer {
+        background-color: rgba(6, 178, 182, 0.8);
+        padding: 102px 0px;
+        .fun-facts-box {
+            i {
+                color: #fff;
+                font-size: 35px;
+                display: block;
+                margin-bottom: 35px;
+            }
+            p {
+                color: #fff;
+                font-size: 18px;
+            }
+        }
+    }
+}

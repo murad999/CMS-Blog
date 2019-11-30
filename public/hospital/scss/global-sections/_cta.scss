@@ -1,0 +1,30 @@
+/* -------------------------------------
+3 Global Sections - Call to Action 
+---------------------------------------- */
+
+/* --------------------
+3.2 Section - Call to Action
+----------------------- */
+.cta{
+    padding: 57px 0px 60px;
+    background: $primary_color;
+    .cta-text{
+        text-align: center;
+        h3{
+            font-weight: 700;
+            color:#fff;
+            font-size: 25px;
+            margin-top: 0px;
+            margin-bottom: 15px;
+        }
+        p{
+            color:#fff;
+            margin-bottom: 37px;
+        }
+        .btn-primary{
+            &:hover{
+                color:#fff;
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+/* -------------------------------------
+3 Global Sections - Sub Page Banner
+---------------------------------------- */
+
+/* --------------------
+3.10 Section - Sub Page Banner
+----------------------- */
+
+.sub-page-banner {
+    background: url("../images/home-v1.png");
+    background-repeat: repeat;
+    background-size: 100% auto;
+    .layer {
+        padding-top: 121px;
+        padding-bottom: 118px;
+        //margin-top: 138px;
+        background-color: rgba(50, 50, 50, 0.3);
+        .subpage-banner-text {
+            h5 {
+                margin-bottom: 0px;
+                a {
+                    color: #fff;
+                    &:hover {
+                        color: $primary_color;
+                    }
+                }
+                i {
+                    margin-right: 5px;
+                    margin-left: 5px;
+                    font-size: 20px;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+}

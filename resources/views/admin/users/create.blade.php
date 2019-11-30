@@ -9,7 +9,10 @@
         </ul>
     @endif
     <div class="panel panel-default">
-         <div class="panel-heading">Create a New User</div>
+         <div class="panel-heading">Create a New User
+            
+
+         </div>
 
         <div class="panel-body">
             <form action="{{route('users.store')}}" method="post" accept-charset="utf-8" enctype="multipart/form-data">

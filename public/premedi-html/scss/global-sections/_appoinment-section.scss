@@ -1,0 +1,18 @@
+/* -------------------------------------
+3 Global Sections - Appoinment section 
+---------------------------------------- */
+
+/* --------------------
+3.6 Section - Appoinment section
+----------------------- */
+.appoinment {
+   padding: 84px 0px 70px;
+    background: url('../images/appoinment-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-attachment: scroll;
+    img {
+        position: absolute;
+        top: -180px;
+    }
+}

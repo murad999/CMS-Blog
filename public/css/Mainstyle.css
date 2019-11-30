@@ -1,0 +1,26 @@
+/*.panel-default>.panel-heading{
+	background: #06b2b6;
+	border-color:#06b2b6;
+}*/
+
+.NavColor{
+	background: #06b2b6;
+	border-color:#06b2b6; 
+}
+
+.itemColor{
+	background: #06b2b6;
+	border-color:#06b2b6;
+}
+
+.itemColor a,
+.NavColor .hospitalBrand,
+.navbar-default .navbar-nav>li>a {
+	color: #fff;
+}
+
+.itemColor a:hover{
+	color: #000;
+	cursor: pointer;
+	text-decoration: none;
+}

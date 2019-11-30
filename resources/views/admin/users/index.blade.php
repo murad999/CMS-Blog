@@ -9,7 +9,11 @@
 		</ul>
 	@endif
 	<div class="panel panel-default">
-         <div class="panel-heading">Create User</div>
+         <div class="panel-heading">Create User
+            <div class="text-right">
+               <a  class="btn btn-success " href="{{route('users.profile')}}">My Profile </a> 
+            </div>
+         </div>
 
         <div class="panel-body">
         	<table class="table table-hover">
@@ -40,6 +44,10 @@
                     </tr>
                     @endforeach
                 </tbody>
+            </table>
+        </div>
+         <div class="panel-footer text-center">
+            {{$users->links()}}
         </div>
     </div>
 @stop

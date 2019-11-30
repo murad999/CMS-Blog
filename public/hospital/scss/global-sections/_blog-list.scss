@@ -1,0 +1,69 @@
+/* -------------------------------------
+3 Global Sections - Blog List
+---------------------------------------- */
+
+/* --------------------
+3.13 Section - Blog List
+----------------------- */
+.blog-list {
+    padding: 110px 0px;
+    .blog-list-details {
+        margin-bottom: 100px;
+        .blog-list-description {
+            h4 {
+                a {
+                    color: #505050;
+                    &:hover {
+                        color: $primary_color;
+                    }
+                }
+            }
+            span {
+                font-family: 'Poppins', sans-serif;
+                font-weight: 400;
+                font-size: 14px;
+                margin-bottom: 30px;
+                display: inline-block;
+                a {
+                    color: #606060;
+                    margin-right: 10px;
+                    i {
+                        font-size: 15px;
+                        color: #505050;
+                        margin-right: 5px;
+                    }
+                    &:hover {
+                        color: $primary_color;
+                        & i {
+                            color: $primary_color;
+                        }
+                    }
+                }
+            }
+            p {
+                font-size: 15px;
+                color: #606060;
+            }
+            .btn {
+                margin-top: 30px;
+            }
+        }
+    }
+    .post-nav {
+       
+        .customNextBtn {
+            background: #404040;
+            padding: 5px 15px 5px 15px;
+            &:hover,
+            &.active {
+                background: $primary_color;
+                color: #fff;
+            }
+
+        }
+        .btn.btn-default {
+            padding: 5px 15px 5px 15px;
+            
+        }
+    }
+}

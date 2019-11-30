@@ -1,0 +1,21 @@
+/* button styles */
+
+$primary_color: #06b2b6;
+$secondary_color: #505050;
+
+//button default
+$button_default_bg: $primary_color;
+$button_default_border: $primary_color;
+
+// button primary
+$button_primary_bg: #fff;
+$button_primary_border: #fff;
+$button_primary_color: #606060;
+
+// button secondary
+$button_secondary_bg: #424242;
+$button_secondary_border: #424242;
+$button_secondary_color: #fff;
+$button_secondary_hover_bg: $primary_color;
+
+

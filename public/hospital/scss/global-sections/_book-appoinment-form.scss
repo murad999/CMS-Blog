@@ -1,0 +1,63 @@
+/* -------------------------------------
+3 Global Sections - Book Appoinment Form
+---------------------------------------- */
+
+/* --------------------
+3.17 Section - Book Appoinment Form
+----------------------- */
+.appoinment-form {
+    background: #fff;
+    padding: 53px 80px;
+    padding-top: 75px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+    margin-top: 88px;
+    .appoinment-form-fields {
+        margin-top: 33px;
+        display: inline-block;
+        .form-group {
+            //margin-top: 33px;
+            .form-control {
+                background: #dddddd;
+                border: 1px solid #dddddd;
+                font-size: 14px;
+                font-family: 'Poppins', sans-serif;
+                padding-left: 12px;
+                &::before {
+                    content: "\eb25";
+                    font-family: icofont;
+                    font-style: normal;
+                    font-weight: normal;
+                }
+            }
+            .form-control::-webkit-input-placeholder {
+                /* Chrome/Opera/Safari */
+                color: #404040;
+            }
+            .form-control::-moz-placeholder {
+                /* Firefox 19+ */
+                color: #404040;
+            }
+            .form-control:-ms-input-placeholder {
+                /* IE 10+ */
+                color: #404040;
+            }
+            .form-control:-moz-placeholder {
+                /* Firefox 18- */
+                color: #404040;
+            }
+            .btn {
+                width: 100%;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.datepicker.dropdown-menu {
+    font-family: 'Poppins', sans-serif;
+}
+
+.datepicker table tr td.active.active {
+    background-color: $primary_color;
+    background-image: -moz-linear-gradient(top, $primary_color, $primary_color);
+}

@@ -1,0 +1,138 @@
+/* -------------------------------------
+3 Global Sections - Single Blog 
+---------------------------------------- */
+
+/* --------------------
+3.18 Section - Single Blog 
+----------------------- */
+.single-blog {
+    padding: 110px 0px;
+    .blog-list-details {
+        margin-bottom: 0px;
+        .blog-list-description {
+            h4 {
+                a {
+                    color: #505050;
+                    &:hover {
+                        color: $primary_color;
+                    }
+                }
+            }
+            span {
+                font-family: 'Poppins', sans-serif;
+                font-weight: 400;
+                font-size: 14px;
+                margin-bottom: 30px;
+                display: inline-block;
+                a {
+                    color: #606060;
+                    margin-right: 10px;
+                    i {
+                        font-size: 15px;
+                        color: #505050;
+                        margin-right: 5px;
+                    }
+                    &:hover {
+                        color: $primary_color;
+                        & i {
+                            color: $primary_color;
+                        }
+                    }
+                }
+            }
+            p {
+                font-size: 15px;
+                color: #606060;
+            }
+            .btn {
+                margin-top: 30px;
+            }
+            .single-blog-para {
+                margin-bottom: 70px;
+            }
+            .social-links {
+                margin-bottom: 100px;
+                a {
+                    i {
+                        font-size: 15px;
+                        color: #606060;
+                        padding: 5px 7px;
+                        border: 1px solid $primary_color;
+                        margin-right: 10px;
+                        border-radius: 5px;
+                    }
+                    &:hover {
+                        i {
+                            background: $primary_color;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .comments {
+        margin-bottom: 70px;
+        h4 {
+            margin-bottom: 20px;
+            font-weight: 600;
+            color: #505050;
+        }
+        ul {
+            li {
+                img {
+                    float: left;
+                    margin-right: 20px;
+                    border-radius: 5px;
+                }
+                .comments-details {
+                    padding-bottom: 30px;
+                    h4 {
+                        font-weight: 400;
+                        color: #404040;
+                        margin-bottom: 10px;
+                        span {
+                            font-size: 14px;
+                            color: #606060;
+                            margin-left: 20px;
+                        }
+                    }
+                    p {
+                        color: #606060;
+                        margin-bottom: 10px;
+                    }
+                    a {
+                        font-family: 'Poppins', sans-serif;
+                        font-weight: 400;
+                        font-size: 15px;
+                        color: #606060;
+                        &:hover {
+                            color: $primary_color;
+                        }
+                    }
+                }
+                ul {
+                    padding-left: 40px;
+                }
+            }
+        }
+    }
+    .replay-form {
+        h4 {
+            margin-bottom: 20px;
+            font-weight: 600;
+            color: #505050;
+        }
+        .replay-form-fields {
+            .form-group {
+                .form-control {
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 14px;
+                }
+                &.textarea-formgroup{
+                     min-height: 133px;
+                }
+            }
+        }
+    }
+}

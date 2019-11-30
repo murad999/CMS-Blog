@@ -1,0 +1,23 @@
+/* -------------------------------------
+7 Blog Gird  Page 
+---------------------------------------- */
+
+/* --------------------
+7.1 Section - recent Post 
+----------------------- */
+
+.blog-gird-page .recent-post {
+    padding-bottom: 110px;
+    background: #fff;
+    .top-text {
+        display: none;
+    }
+    .normal-post {
+        .item {
+            margin-bottom: 60px;
+        }
+    }
+    .btn-default {
+        display: inline-block;
+    }
+}

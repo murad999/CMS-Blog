@@ -1,0 +1,21 @@
+.header .top-container .navbar-primary.standard-menu .sticky_navigation .site-logo-part {
+    width: 30%;
+    background: #06b2b6;
+}
+
+.header .top-container .navbar-primary.standard-menu .sticky_navigation .menu-part {
+    transform: none;
+    width: 60%;
+}
+
+.header .top-container .navbar-primary.standard-menu .sticky_navigation .menu-part .navbar-collapse .nav.navbar-nav li a {
+    padding: 23px 4px;
+}
+
+/*span {
+    color: #fff;
+}*/
+
+.header .top-container .navbar-primary {
+    min-height: 0px;
+}

@@ -1,0 +1,19 @@
+/*-------------------------------------------------------------------------------
+  1. Global | 1.4 Loader
+-------------------------------------------------------------------------------*/
+.loader {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    color: #fff;
+    text-align: center;
+    .preview {
+        padding: 120px 0;
+        width: 100%;
+        height: 800px;
+    }
+}

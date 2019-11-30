@@ -1,0 +1,24 @@
+/* -------------------------------------
+3 Global Sections - Modal Popover
+---------------------------------------- */
+
+/* --------------------
+3.22 Section - Modal Popover
+----------------------- */
+.premedi-popup {
+    .modal-dialog {
+        .modal-content {
+            .modal-body {
+                .appoinment-form-fields {
+                    padding: 20px;
+                    .form-group {
+                        .input-group-addon {
+                            background: transparent;
+                            border: 0px solid #dddddd;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

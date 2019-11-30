@@ -1,418 +1,437 @@
 <!DOCTYPE html>
 <html lang="en">
-<head lang="en">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>{{$title}}</title>
 
-    <link rel="stylesheet" type="text/css" href="{{asset('app/css/fonts.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('app/css/crumina-fonts.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('app/css/normalize.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('app/css/grid.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('app/css/styles.css')}}">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="155 characters of message matching text with a call to action goes here">
+    <meta name="author" content="">
+    <title>  {{$title}} </title>
 
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,400i,500,500i,600,600i,700|Source+Sans+Pro:300,400,400i,600,600i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="{{asset('hospital/css/bootstrap.min.css')}}">
+    <link href="{{ asset('css/toastr.min.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{asset('hospital/css/formValidation.min.css')}}">
+    <link rel="stylesheet" href="{{asset('hospital/css/animate.css')}}">
+    <link rel="stylesheet" href="{{asset('hospital/css/datepicker.min.css')}}">
+    <link rel="stylesheet" href="{{asset('hospital/css/font-awesome.min.css')}}">
+    <link rel="stylesheet" href="{{asset('hospital/css/icofont.css')}}">
+    <link rel="stylesheet" href="{{asset('hospital/css/owl.carousel.min.css')}}">
+    <link rel="stylesheet" href="{{asset('hospital/css/owl.theme.default.min.css')}}">
+    <link rel="stylesheet" href="{{asset('hospital/css/style.css')}}">
+    <link rel="stylesheet" href="{{asset('hospital/css/main_style.css')}}">
 
-    <!--Plugins styles-->
-
-    <link rel="stylesheet" type="text/css" href="{{asset('app/css/jquery.mCustomScrollbar.min.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('app/css/swiper.min.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('app/css/primary-menu.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('app/css/magnific-popup.css')}}">
-
-    <!--Styles for RTL-->
-
-    <!--<link rel="stylesheet" type="text/css" href="app/css/rtl.css">-->
-
-    <!--External fonts-->
-
-    <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
-    <style>
-        .padded-50{
-            padding: 40px;
-        }
-        .text-center{
-            text-align: center;
-        }
-    </style>
-
+    <link rel="apple-touch-icon" sizes="57x57" href="{{asset('hospital/favicons/apple-icon-57x57.png')}}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{asset('hospital/favicons/apple-icon-60x60.png')}}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{asset('hospital/favicons/apple-icon-72x72.png')}}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{asset('hospital/favicons/apple-icon-76x76.png')}}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{asset('hospital/favicons/apple-icon-114x114.png')}}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{asset('hospital/favicons/apple-icon-120x120.png')}}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{asset('hospital/favicons/apple-icon-144x144.png')}}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{asset('hospital/favicons/apple-icon-152x152.png')}}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{asset('hospital/favicons/apple-icon-180x180.png')}}">
+    <link rel="icon" type="image/png" sizes="192x192" href="{{asset('hospital/favicons/android-icon-192x192.png')}}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{asset('hospital/favicons/favicon-32x32.png')}}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{asset('hospital/favicons/favicon-96x96.png')}}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{asset('hospital/favicons/favicon-16x16.png')}}">
+    <link rel="manifest" href="favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="{{asset('hospital/favicons/ms-icon-144x144.png')}}">
+    <meta name="theme-color" content="#ffffff">
 </head>
-
-
-<body class=" ">
-
-<div class="content-wrapper">
-    
+{{-- {{asset('hospital/')}} --}}
+<body class="home-v2">
+    <div class="loader">
+    <div class="preview" style="background: rgba(255, 255,255,0.7) url('{{asset('hospital/images/oval.svg')}}') center center no-repeat; background-size:125px;"></div>
+</div>
+<!--Header start-->
 @include('includes.header')
-
-    <div class="header-spacer"></div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-2"></div>
-            <div class="col-lg-8">
-                <article class="hentry post post-standard has-post-thumbnail sticky">
-
-                        <div class="post-thumb">
-                            <img src="{{$first_post->featured}}" alt="{{$first_post->title}}">
-                            <div class="overlay"></div>
-                            <a href="{{$first_post->featured}}" class="link-image js-zoom-image">
-                                <i class="seoicon-zoom"></i>
-                            </a>
-                            <a href="#" class="link-post">
-                                <i class="seoicon-link-bold"></i>
-                            </a>
-                        </div>
-
-                        <div class="post__content">
-
-                            <div class="post__content-info">
-
-                                    <h2 class="post__title entry-title text-center">
-                                        <a href="{{route('single.post',['slug'=>$first_post->slug])}}">{{$first_post->title}}</a>
-                                    </h2>
-
-                                    <div class="post-additional-info">
-
-                                        <span class="post__date">
-
-                                            <i class="seoicon-clock"></i>
-
-                                            <time class="published" datetime="2016-04-17 12:00:00">
-                                                {{$first_post->created_at->diffForHumans()}}
-                                            </time>
-
-                                        </span>
-
-                                        <span class="category">
-                                            <i class="seoicon-tags"></i>
-                                            <a href="{{route('single.category',['id'=>$first_post->category->id])}}">{{$first_post->category->name}}</a>
-                                        </span>
-
-                                        <span class="post__comments">
-                                            <a href="#"><i class="fa fa-comment-o" aria-hidden="true"></i></a>
-                                            6
-                                        </span>
-
-                                    </div>
-                            </div>
-                        </div>
-
-                </article>
-            </div>
-            <div class="col-lg-2"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-lg-6">
-                <article class="hentry post post-standard has-post-thumbnail sticky">
-
-                        <div class="post-thumb">
-                            <img src="{{$second_post->featured}}" alt="{{$second_post->title}}">
-                            <div class="overlay"></div>
-                            <a href="{{$second_post->featured}}" class="link-image js-zoom-image">
-                                <i class="seoicon-zoom"></i>
-                            </a>
-                            <a href="#" class="link-post">
-                                <i class="seoicon-link-bold"></i>
-                            </a>
-                        </div>
-
-                        <div class="post__content">
-
-                            <div class="post__content-info">
-
-                                    <h2 class="post__title entry-title ">
-                                        <a href="15_blog_details.html">{{$second_post->title}}</a>
-                                    </h2>
-
-                                    <div class="post-additional-info">
-
-                                        <span class="post__date">
-
-                                            <i class="seoicon-clock"></i>
-
-                                            <time class="published" datetime="2016-04-17 12:00:00">
-                                                {{$second_post->created_at->toFormattedDateString()}}
-                                            </time>
-
-                                        </span>
-
-                                        <span class="category">
-                                            <i class="seoicon-tags"></i>
-                                            <a href="#">{{$second_post->category->name}}</a>
-                                        </span>
-
-                                        <span class="post__comments">
-                                            <a href="#"><i class="fa fa-comment-o" aria-hidden="true"></i></a>
-                                            6
-                                        </span>
-
-                                    </div>
-                            </div>
-                        </div>
-
-                </article>
-            </div>
-            <div class="col-lg-6">
-                <article class="hentry post post-standard has-post-thumbnail sticky">
-
-                        <div class="post-thumb">
-                            <img src="{{$third_post->featured}}" alt="{{$third_post->title}}">
-                            <div class="overlay"></div>
-                            <a href="{{$third_post->featured}}" class="link-image js-zoom-image">
-                                <i class="seoicon-zoom"></i>
-                            </a>
-                            <a href="#" class="link-post">
-                                <i class="seoicon-link-bold"></i>
-                            </a>
-                        </div>
-
-                        <div class="post__content">
-
-                            <div class="post__content-info">
-
-                                    <h2 class="post__title entry-title ">
-                                        <a href="15_blog_details.html">{{$third_post->title}}</a>
-                                    </h2>
-
-                                    <div class="post-additional-info">
-
-                                        <span class="post__date">
-
-                                            <i class="seoicon-clock"></i>
-
-                                            <time class="published" datetime="2016-04-17 12:00:00">
-                                                {{$third_post->created_at->toFormattedDateString()}}
-                                            </time>
-
-                                        </span>
-
-                                        <span class="category">
-                                            <i class="seoicon-tags"></i>
-                                            <a href="#">{{$third_post->category->name}}</a>
-                                        </span>
-
-                                        <span class="post__comments">
-                                            <a href="#"><i class="fa fa-comment-o" aria-hidden="true"></i></a>
-                                            6
-                                        </span>
-
-                                    </div>
-                            </div>
-                        </div>
-
-                </article>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="container-fluid">
-        <div class="row medium-padding120 bg-border-color">
-            <div class="container">
-                <div class="col-lg-12">
-                <div class="offers">
-                    <div class="row">
-                        <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
-                            <div class="heading">
-                                <h4 class="h1 heading-title">{{$laravel_articles->name}}</h4>
-                                <div class="heading-line">
-                                    <span class="short-line"></span>
-                                    <span class="long-line"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="case-item-wrap">
-                            @foreach($laravel_articles->posts()->take(3)->get() as $lara_arti_post)
-                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                                <div class="case-item">
-                                    <div class="case-item__thumb">
-                                        <img src="{{$lara_arti_post->featured}}" alt="our case">
-                                    </div>
-                                    <h6 class="case-item__title"><a href="#">{{$lara_arti_post->title}}</a></h6>
-                                </div>
-                            </div>
-                            @endforeach
-                        </div>
-                    </div>
-                </div>
-                <div class="padded-50"></div>
-                <div class="offers">
-                    <div class="row">
-                        <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
-                            <div class="heading">
-                                <h4 class="h1 heading-title">{{$wordpress->name}}</h4>
-                                <div class="heading-line">
-                                    <span class="short-line"></span>
-                                    <span class="long-line"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="case-item-wrap">
-                            @foreach($wordpress->posts()->orderBy('created_at','desc')->take(3)->get() as $wp_post)
-                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                                <div class="case-item">
-                                    <div class="case-item__thumb">
-                                        <img src="{{$wp_post->featured}}" alt="our case">
-                                    </div>
-                                    <h6 class="case-item__title"><a href="#">{{$wp_post->title}}</a></h6>
-                                </div>
-                            </div>
-
-                            @endforeach
-                        </div>
-                    </div>
-                </div>
-                <div class="padded-50"></div>
-                <div class="offers">
-                    <div class="row">
-                        <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
-                            <div class="heading">
-                                <h4 class="h1 heading-title">{{$javascript->name}}</h4>
-                                <div class="heading-line">
-                                    <span class="short-line"></span>
-                                    <span class="long-line"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="case-item-wrap">
-                            @foreach($javascript->posts()->orderBy('created_at','desc')->take(3)->get() as $js)
-                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                                <div class="case-item">
-                                    <div class="case-item__thumb">
-                                        <img src="{{$js->featured}}" alt="our case">
-                                    </div>
-                                    <h6 class="case-item__title"><a href="#">{{$js->title}}</a></h6>
-                                </div>
-                            </div>
-                            @endforeach
-
-                        </div>
-                    </div>
-                </div>
-                <div class="padded-50"></div>
-            </div>
-            </div>
-        </div>
-    </div>
-
-<!-- Subscribe Form -->
-
-<div class="container-fluid bg-green-color">
-    <div class="row">
+<!--Header end-->
+ {{-- {{dd($first_depService)}} --}}
+    <div class="content">
+    <section id="home-page-banner" class="home-page-banner">
+    <img src="{{asset($slider->featured_slider)}}" alt="{{$slider->title_slider}}" class="img-responsive home-banner" />    <div class="image-caption">
         <div class="container">
             <div class="row">
-                <div class="subscribe scrollme">
-                    <div class="col-lg-6 col-lg-offset-5 col-md-6 col-md-offset-5 col-sm-12 col-xs-12">
-                        <h4 class="subscribe-title">Email Newsletters!</h4>
-                        <form class="subscribe-form" method="post" action="">
-                            <input class="email input-standard-grey input-white" name="email" required="required" placeholder="Your Email Address" type="email">
-                            <button class="subscr-btn">subscribe
-                                <span class="semicircle--right"></span>
-                            </button>
-                        </form>
-                        <div class="sub-title">Sign up for new Seosignt content, updates, surveys & offers.</div>
-
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <h1 class="text-center fadeInDown wow" data-wow-duration="1s">WE CARE ABOUT YOU</h1>
+                    <p class="text-center fadeInDown wow" data-wow-duration="1s">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                    <div class="row hidden-xs fadeInUp wow" data-wow-duration="1s">
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right">
+                            <a href="{{route('about')}}" class="btn btn-primary">About Us</a>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-left">
+                            <a href="{{route('contact')}}" class="btn btn-default">Contact Us</a>
+                        </div>
                     </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                    <div class="appoinment-form">
+                        <h2>MAKE AN APPOINMENT</h2>
+                        @if(count($errors)>0)
+                            <ul class="list-group">
+                                @foreach($errors->all() as $error)
+                                    <li class="list-group-item text-danger">{{$error}}</li>
+                                @endforeach
+                            </ul>
+                        @endif
+                        <div class="row">
+                            <form id="appoinment-form-fields" action="{{route('appointments.store')}}" method="post" class="appoinment-form-fields form-horizontal" data-fv-framework="bootstrap" data-fv-message="This value is not valid" data-fv-feedbackicons-valid="glyphicon glyphicon-ok" data-fv-feedbackicons-invalid="glyphicon glyphicon-remove" data-fv-feedbackicons-validating="glyphicon glyphicon-refresh">
+                                {{csrf_field()}}
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 no-l-padding">
+                                    <div class="form-group">
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                            <input required="" class="form-control" placeholder="Your Name:" id="name" name="name" type="text" data-fv-notempty="true" data-fv-notempty-message="The name is required" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 validate-right-icon">
+                                            <select class="form-control" name="doctor_id" id="doctors" data-fv-notempty="true" data-fv-notempty-message="This Field is required">
+                                                <option value="default">Select Doctor</option>
+                                               {{--  @if(!empty($doctors)) --}}
+                                                 @foreach($doctors as $doc)
+                                                
+                                                <option value="{{$doc->id}}">{{$doc->name}}</option>
+                                                
+                                                @endforeach
+                                                {{-- @endif --}}
+                                               
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 no-l-padding">
+                                    <div class="form-group">
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                            <input class="form-control" placeholder="Your Phone:" id="phone" name="phone" type="text" data-fv-notempty="true" data-fv-notempty-message="Phone Number is required"  />
+                                        </div>
+                                    </div>
 
-                    <div class="images-block">
-                        <img src="{{asset('app/img/subscr-gear.png')}}" alt="gear" class="gear">
-                        <img src="{{asset('app/img/subscr1.png')}}" alt="mail" class="mail">
-                        <img src="{{asset('app/img/subscr-mailopen.png')}}" alt="mail" class="mail-2">
+                                   <div class="form-group">
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 validate-right-icon">
+                                            <select class="form-control" name="department_id" id="department" data-fv-notempty="true" data-fv-notempty-message="This Field is required">
+                                                <option value="default">Select Department</option>
+                                               {{--  @if(!empty($departments)) --}}
+                                                @foreach($departments as $dep)
+                                                <option value="{{$dep->id}}">{{$dep->title}}</option>
+                                                @endforeach
+                                            {{-- @endif --}}
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 no-l-padding">
+                                    <div class="form-group">
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 validate-right-icon">
+                                            <input type="text" name="date" class="form-control datepicker" placeholder="MM/DD/YYYY" id="dateTo" readonly="readonly" value="" data-fv-notempty="true" data-fv-date="true" data-fv-date-format="MM/DD/YYYY" data-fv-date-message="The value is not a valid date" />
+                                            <span class="input-group-addon add-on"><i class="icofont icofont-ui-calendar"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                            <button type="submit" class="btn btn-default appoinment-form-submit">Book an Appoinment</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+</section>
+    <!--banner ends -->
+    <main class="main">    
+    <!-- our department starts -->
+         <section id="our-department" class="our-department">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center" style="margin-top: 80px">
+                        <div class="top-text">
+                            <h2>OUR DEPARTMENT</h2>
+                            <p>
+                                lorem ipsum dolor sit amet consectetur adipiscing elit                    </p>
+                            <div class="divider">
+                                <span><i class="icofont icofont-bed-patient"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="">
+                        <ul id="tabnav" class="nav nav-pills nav-stacked col-md-12 horizantal-tab" >
+                            @foreach($depServices as $deps)
+                            <li  class="">
+                                <a  href="#{{strtoupper($deps->title)}}"  data-toggle="tab" ><i class='icofont icofont-pulse' ></i> {{$deps->title}}</a>
+                            </li>
+                            @endforeach
+                            {{-- <li  class="">
+                                <a  href="#NEUROLOGY"  data-toggle="tab" ><i class='icofont icofont-dna-alt-1' ></i> Neurology</a>
+                            </li>
+                            <li  class="">
+                                <a  href="#DIAGNOSTICS"  data-toggle="tab" ><i class='icofont icofont-test-bottle' ></i> Diagnostics</a>
+                            </li>
+                            <li  class="">
+                                <a  href="#DENTAL"  data-toggle="tab" ><i class='icofont icofont-tooth' ></i> Detal</a>
+                            </li>
+                            <li  class="">
+                                <a  href="#EYECARE"  data-toggle="tab" ><i class='icofont icofont-eye-alt' ></i> Eye Care</a>
+                            </li>
+                            <li  class="">
+                                <a  href="#EMERGENCY"  data-toggle="tab" ><i class='icofont icofont-ambulance' ></i> Emergency</a>
+                            </li> --}}
+                        </ul>
 
-<!-- End Subscribe Form -->
-</div>
+                        <div class="tab-content tab-content col-md-12">
+                            <div class="tab-pane active" id="{{strtoupper($first_depService->title)}}">    
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                        <div class="tab-text-part">
+                                            <p class="department-para">
+                                                {!! $first_depService->content !!} 
+                                            </p>
+                                            <div style="margin: 50px 0"></div>
+                                            <a href="{{route('contact')}}" class="btn btn-default">Contact Us</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                        <div class="tab-image">
+                                            <img src="{{$first_depService->featured}}" alt="{{$first_depService->title}}" class="img-responsive" />            </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane " id="{{strtoupper($second_depService->title)}}">    
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                        <div class="tab-text-part">
+                                            <p class="department-para">
+                                                {!! $second_depService->content !!} </p>
+                                            <div style="margin: 50px 0"></div>
+                                            <a href="{{route('contact')}}" class="btn btn-default">Contact Us</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                        <div class="tab-image">
+                                            <img src="{{$second_depService->featured}}" alt="{{$second_depService->title}}" class="img-responsive" />            </div>
+                                    </div>
+                                 </div>
+                            </div>
+                            <div class="tab-pane " id="{{strtoupper($third_depService->title)}}">    
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                        <div class="tab-text-part">
+                                            <p class="department-para">
+                                                {!! $third_depService->content !!} </p>
+                                            <div style="margin: 50px 0"></div>
+                                            <a href="{{route('contact')}}" class="btn btn-default">Contact Us</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                        <div class="tab-image">
+                                            <img src="{{$third_depService->featured}}" alt="{{$third_depService->title}}" class="img-responsive" />            </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane " id="{{strtoupper($forth_depService->title)}}">   
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                        <div class="tab-text-part">
+                                            <p class="department-para">
+                                                {!! $forth_depService->content !!}  </p>
+                                            <div style="margin: 50px 0"></div>
+                                            <a href="{{route('contact')}}" class="btn btn-default">Contact Us</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                        <div class="tab-image">
+                                            <img src="{{$forth_depService->featured}}" alt="{{$forth_depService->title}}" class="img-responsive" />            </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane " id="{{strtoupper($fifth_depService->title)}}">    
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                        <div class="tab-text-part">
+                                            <p class="department-para">
+                                                {!! $fifth_depService->content !!} </p>
+                                            <div style="margin: 50px 0"></div>
+                                            <a href="{{route('contact')}}" class="btn btn-default">Contact Us</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                        <div class="tab-image">
+                                            <img src="{{$fifth_depService->featured}}" alt="{{$fifth_depService->title}}" class="img-responsive" />            </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane " id="{{strtoupper($six_depService->title)}}">    
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                        <div class="tab-text-part">
+                                            <p class="department-para">
+                                                {!! $six_depService->content !!} </p>
+                                            <div style="margin: 50px 0"></div>
+                                            <a href="{{route('contact')}}" class="btn btn-default">Contact Us</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                        <div class="tab-image">
+                                            <img src="{{$six_depService->featured}}" alt="{{$six_depService->title}}" class="img-responsive" />            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    <!-- tab content -->
+                </div>
+            </div>
+        </section>
+    <!-- our department ends -->
+    <!-- our Services starts -->
+    
+
+    <section id="our-services" class="our-services">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                    <div class="top-text">
+                        <h2>
+                            OUR SERVICES                        </h2>
+                        <p>lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+                        <div class="divider">
+                            <span><i class="icofont icofont-bed-patient"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                @foreach($services as $service)
+                <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+                    <div class="services-box text-center">
+                        {!! $service->icon !!}
+                        {{-- <i class="icofont icofont-heartbeat"></i> --}}
+                        <h4>
+                            {{$service->title}}                           
+                        </h4>
+                        <p>
+                            {!! $service->description !!}                            
+                        </p>
+                    </div>
+                </div>
+                @endforeach
+                {{-- <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+                    <div class="services-box text-center">
+                        <i class="icofont icofont-tooth"></i>
+                        <h4>
+                            Dental Care                          
+                        </h4>
+                        <p>
+                            HealthCheck also provides FREE dental services to children up to age21                            
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+                    <div class="services-box text-center">
+                        <i class="icofont icofont-icu"></i>
+                        <h4>
+                            Emergency Services                            
+                        </h4>
+                        <p>
+                            Emergency medical services, also known as ambulance services or paramedic services                            
+                        </p>
+                    </div>
+                </div>             
+                <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+                    <div class="services-box text-center">
+                        <i class="icofont icofont-dna-alt-1"></i>
+                        <h4>
+                            DNA Testing                            
+                        </h4>
+                        <p>
+                            DNA paternity testing is the use of DNA to determine two individuals are biologically                            
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+                    <div class="services-box text-center">
+                        <i class="icofont icofont-blood"></i>
+                        <h4>
+                            Blood Testing                           
+                             </h4>
+                        <p>
+                            A blood test is a laboratory analysis is usually extracted from a vein                            
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+                    <div class="services-box text-center">
+                        <i class="icofont icofont-ambulance"></i>
+                        <h4>
+                            24/7 Support                            
+                        </h4>
+                        <p>
+                            Free 24/7 support for patients in emergency time addition to free checkups every six months                            
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+                    <div class="services-box text-center">
+                        <i class="icofont icofont-bed-patient"></i>
+                        <h4>
+                            General Treatment                            
+                        </h4>
+                        <p>
+                            General Treatment Guidelines are systematically developed  statemets that assist prescriber                            
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+                    <div class="services-box text-center">
+                        <i class="icofont icofont-prescription"></i>
+                        <h4>
+                            Free Checkup                            
+                        </h4>
+                        <p>
+                            Protect your child by having them get a complete physical at the ages                           
+                         </p>
+                    </div>
+                </div>    --}}
+            </div>
+        </div>
+    </section>
+    <!-- our Services ends -->
 
 
 
-<!-- Footer -->
+
+    </main>
+    </div>    
+<!-- Footer start-->
 
 @include('includes.footer')
 
-<!-- End Footer -->
+<!--Footer End  -->
+<script src="{{asset('hospital/js/jquery.min.js')}}"></script>
+<script src="{{ asset('js/toastr.min.js') }}"></script>
+<script type="text/javascript" src="{{asset('hospital/js/imagesloaded.pkgd.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('hospital/js/formValidation.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('hospital/js/wow.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('hospital/js/bootstrap.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('hospital/js/jquery.sticky.js')}}"></script>
+<script type="text/javascript" src="{{asset('hospital/js/bootstrap-datepicker.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('hospital/js/premedi_custom.js')}}"></script>
+<script type="text/javascript" src="{{asset('hospital/js/owl.carousel.min.js')}}"></script>
+<script>
+    @if(Session::has('success'))
+        toastr.success("{{Session::get('success')}}")
+    @endif
 
-<svg style="display:none;">
-    <symbol id="arrow-left" viewBox="122.9 388.2 184.3 85">
-        <path d="M124.1,431.3c0.1,2,1,3.8,2.4,5.2c0,0,0.1,0.1,0.1,0.1l34.1,34.1c1.6,1.6,3.7,2.5,5.9,2.5s4.3-0.9,5.9-2.4
-        c1.6-1.6,2.4-3.7,2.4-5.9s-0.9-3.9-2.4-5.5l-19.9-19.5h11.1c1.5,0,2.7-1.5,2.7-3c0-1.5-1.2-3-2.7-3h-17.6c-1.1,0-2.1,0.6-2.5,1.6
-        c-0.4,1-0.2,2.1,0.6,2.9l24.4,24.4c0.6,0.6,0.9,1.3,0.9,2.1s-0.3,1.6-0.9,2.1c-0.6,0.6-1.3,0.9-2.1,0.9s-1.6-0.3-2.1-0.9
-        l-34.2-34.2c0,0,0,0,0,0c-0.6-0.6-0.8-1.4-0.9-1.9c0,0,0,0,0,0c0-0.2,0-0.4,0-0.6c0.1-0.6,0.3-1.1,0.7-1.6c0-0.1,0.1-0.1,0.2-0.2
-        l34.1-34.1c0.6-0.6,1.3-0.9,2.1-0.9s1.6,0.3,2.1,0.9c0.6,0.6,0.9,1.3,0.9,2.1s-0.3,1.6-0.9,2.1l-24.4,24.4c-0.8,0.8-1,2-0.6,3
-        c0.4,1,1.4,1.7,2.5,1.7h125.7c1.5,0,2.7-1,2.7-2.5c0-1.5-1.2-2.5-2.7-2.5H152.6l19.9-20.1c1.6-1.6,2.4-3.8,2.4-6s-0.9-4.4-2.4-6
-        c-1.6-1.6-3.7-2.5-5.9-2.5s-4.3,0.9-5.9,2.4l-34.1,34.1c-0.2,0.2-0.3,0.3-0.5,0.5c-1.1,1.2-1.8,2.8-2,4.4
-        C124.1,430.2,124.1,430.8,124.1,431.3C124.1,431.3,124.1,431.3,124.1,431.3z"></path>
-        <path d="M283.3,427.9h14.2c1.7,0,3,1.3,3,3c0,1.7-1.4,3-3,3H175.1c-1.5,0-2.7,1.5-2.7,3c0,1.5,1.2,3,2.7,3h122.4
-        c4.6,0,8.4-3.9,8.4-8.5c0-4.6-3.8-8.5-8.4-8.5h-14.2c-1.5,0-2.7,1-2.7,2.5C280.7,426.9,281.8,427.9,283.3,427.9z"></path>
-    </symbol>
-    <symbol id="arrow-right" viewBox="122.9 388.2 184.3 85">
-        <path d="M305.9,430.2c-0.1-2-1-3.8-2.4-5.2c0,0-0.1-0.1-0.1-0.1l-34.1-34.1c-1.6-1.6-3.7-2.5-5.9-2.5c-2.2,0-4.3,0.9-5.9,2.4
-        c-1.6,1.6-2.4,3.7-2.4,5.9s0.9,4.1,2.4,5.7l19.9,19.6h-11.1c-1.5,0-2.7,1.5-2.7,3c0,1.5,1.2,3,2.7,3h17.6c1.1,0,2.1-0.7,2.5-1.7
-        c0.4-1,0.2-2.2-0.6-2.9l-24.4-24.5c-0.6-0.6-0.9-1.3-0.9-2.1s0.3-1.6,0.9-2.1c0.6-0.6,1.3-0.9,2.1-0.9c0.8,0,1.6,0.3,2.1,0.9
-        l34.2,34.2c0,0,0,0,0,0c0.6,0.6,0.8,1.4,0.9,1.9c0,0,0,0,0,0c0,0.2,0,0.4,0,0.6c-0.1,0.6-0.3,1.1-0.7,1.6c0,0.1-0.1,0.1-0.2,0.2
-        l-34.1,34.1c-0.6,0.6-1.3,0.9-2.1,0.9s-1.6-0.3-2.1-0.9c-0.6-0.6-0.9-1.3-0.9-2.1s0.3-1.6,0.9-2.1l24.4-24.4c0.8-0.8,1-1.9,0.6-2.9
-        c-0.4-1-1.4-1.6-2.5-1.6H158.1c-1.5,0-2.7,1-2.7,2.5c0,1.5,1.2,2.5,2.7,2.5h119.3l-19.9,20c-1.6,1.6-2.4,3.7-2.4,6s0.9,4.4,2.4,5.9
-        c1.6,1.6,3.7,2.5,5.9,2.5s4.3-0.9,5.9-2.4l34.1-34.1c0.2-0.2,0.3-0.3,0.5-0.5c1.1-1.2,1.8-2.8,2-4.4
-        C305.9,431.3,305.9,430.8,305.9,430.2C305.9,430.2,305.9,430.2,305.9,430.2z"></path>
-        <path d="M146.7,433.9h-14.2c-1.7,0-3-1.3-3-3c0-1.7,1.4-3,3-3h122.4c1.5,0,2.7-1.5,2.7-3c0-1.5-1.2-3-2.7-3H132.4
-        c-4.6,0-8.4,3.9-8.4,8.5c0,4.6,3.8,8.5,8.4,8.5h14.2c1.5,0,2.7-1,2.7-2.5C149.3,434.9,148.1,433.9,146.7,433.9z"></path>
-    </symbol>
-    <symbol id="to-top" viewBox="0 0 32 32">
-        <path d="M17,22 L25.0005601,22 C27.7616745,22 30,19.7558048 30,17 C30,14.9035809 28.7132907,13.1085075 26.8828633,12.3655101
-         L26.8828633,12.3655101 C26.3600217,9.87224935 24.1486546,8 21.5,8 C20.6371017,8 19.8206159,8.19871575 19.0938083,8.55288165
-         C17.8911816,6.43144875 15.6127573,5 13,5 C9.13400656,5 6,8.13400656 6,12 C6,12.1381509 6.00400207,12.275367 6.01189661,12.4115388
-          L6.01189661,12.4115388 C4.23965876,13.1816085 3,14.9491311 3,17 C3,19.7614237 5.23249418,22 7.99943992,22 L16,22 L16,16 L12.75,19.25
-           L12,18.5 L16.5,14 L21,18.5 L20.25,19.25 L17,16 L17,22 L17,22 Z M16,22 L16,27 L17,27 L17,22 L16,22 L16,22 Z" id="cloud-upload"></path>
-    </symbol>
-
-</svg>
-
-<!-- Overlay Search -->
-
-<div class="overlay_search">
-    <div class="container">
-        <div class="row">
-            <div class="form_search-wrap">
-                <form>
-                    <input class="overlay_search-input" placeholder="Type and hit Enter..." type="text">
-                    <a href="#" class="overlay_search-close">
-                        <span></span>
-                        <span></span>
-                    </a>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- End Overlay Search -->
-
-<!-- JS Script -->
-
-<script src="{{asset('app/js/jquery-2.1.4.min.js')}}"></script>
-<script src="{{asset('app/js/crum-mega-menu.js')}}"></script>
-<script src="{{asset('app/js/swiper.jquery.min.js')}}"></script>
-<script src="{{asset('app/js/theme-plugins.js')}}"></script>
-<script src="{{asset('app/js/main.js')}}"></script>
-<script src="{{asset('app/js/form-actions.js')}}"></script>
-
-<script src="{{asset('app/js/velocity.min.js')}}"></script>
-<script src="{{asset('app/js/ScrollMagic.min.js')}}"></script>
-<script src="{{asset('app/js/animation.velocity.min.js')}}"></script>
-
-
-<!-- ...end JS Script -->
-
+     @if(Session::has('info'))
+        toastr.info("{{Session::get('info')}}")
+    @endif
+</script>
 </body>
 </html>

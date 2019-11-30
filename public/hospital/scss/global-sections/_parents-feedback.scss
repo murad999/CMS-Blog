@@ -1,0 +1,119 @@
+/* -------------------------------------
+3 Global Sections - Parents Feedback
+---------------------------------------- */
+
+/* --------------------
+3.9 Section - Parents Feedback
+----------------------- */
+.parents-feedback {
+    background: url("../images/feedback-bg.jpg");
+    background-repeat: repeat;
+    background-size: auto auto;
+    .layer {
+        background-color: rgba(6, 178, 182, 0.9);
+        padding: 100px 0px 130px;
+        .top-text {
+            margin-bottom: 57px;
+            h2,
+            p {
+                color: #fff;
+            }
+            .divider span {
+                &::before,
+                &::after {
+                    background: #dddddd;
+                }
+                i {
+                    color: #dddddd;
+                }
+            }
+        }
+        .about-feedback-carousel.owl-theme {
+            .item {
+                img {
+                    width: auto;
+                    display: inline-block;
+                    border-radius: 100%;
+                    border: 3px solid #fff;
+                }
+                span {
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 400;
+                    display: block;
+                    color: #fff;
+                    font-size: 14px;
+                    margin-bottom: 10px;
+                }
+                i {
+                    display: none;
+                }
+                p {
+                    margin-bottom: 28px;
+                    color: #fff;
+                    max-width: 800px;
+                    display: inline-block;
+                }
+                h4 {
+                    margin: 0px;
+                    color: #fff;
+                    font-size: 16px;
+                    font-weight: 500px;
+                }
+            }
+            .owl-dots {
+                display: block;
+                margin-top: 45px;
+                .owl-dot {
+                    span {
+                        width: 30px;
+                        height: 7px;
+                        margin: 5px 2px;
+                        background: #fff;
+                    }
+                    &.active {
+                        span {
+                            width: 14px;
+                        }
+                    }
+                }
+            }
+        }
+        .normal-feedback {
+            .item {
+                display: inline-block;
+                background: #fff;
+                padding: 25px;
+                padding-bottom: 50px;
+                img {
+                    position: absolute;
+                    left: 150px;
+                    border-radius: 100%;
+                    width: 70px;
+                    border: 3px solid #fff;
+                }
+                span {
+                    display: block;
+                    color: #606060;
+                    margin-bottom: 10px;
+                }
+                i {
+                    font-size: 30px;
+                    color: #ccc;
+                    margin-bottom: 20px;
+                    display: inline-block;
+                }
+                p {
+                    margin-bottom: 25px;
+                }
+                h4 {
+                    margin: 0px;
+                    color: #606060;
+                    font-size: 15px;
+                }
+            }
+            .owl-dots {
+                display: none;
+            }
+        }
+    }
+}

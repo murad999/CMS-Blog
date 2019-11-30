@@ -1,0 +1,187 @@
+.header {
+    .top-container {
+        .top-menu {
+            .social-links {
+                a {
+                    i {
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+        .navbar-primary {
+            .sticky_navigation {
+                .menu-part {
+                    .navbar-collapse {
+                        .nav.navbar-nav {
+                            li {
+                                a {
+                                    padding: 25px 15px;
+                                }
+                            }
+                        }
+                    }
+                    &::after {
+                        right: -629px;
+                    }
+                }
+            }
+            &.standard-menu {
+                .sticky_navigation {
+                    background: $primary_color;
+                    .site-logo-part {
+                        width: 20%;
+                    }
+                    .menu-part {
+                        width: 70%;
+
+                    }
+                    .search-part {
+                        width: 10%;
+                    }
+                }
+
+            }
+        }
+
+    }
+}
+
+.home-page-banner {
+    .image-caption {
+        padding-top: 70px;
+        .search-form {
+            margin-top: 70px;
+        }
+    }
+}
+
+.appoinment {
+    .appoinment-form {
+        padding: 25px 40px;
+        margin-top: 0px;
+    }
+}
+
+.about {
+    .about-premedi {
+        padding: 20px 0px 0px;
+        .premedi-story {
+            margin-top: 10px;
+        }
+    }
+}
+
+.fun-facts {
+    .layer {
+        padding: 39px 0px;
+    }
+}
+
+.parents-feedback {
+    .layer {
+        padding: 40px 0px;
+        .top-text {
+            margin-bottom: 17px;
+        }
+    }
+}
+
+.our-department {
+    .horizantal-tab.nav-pills {
+        li {
+            margin-right: 15px;
+            min-width: 130px;
+            a {
+                &.active {
+                    left: 63px;
+                }
+            }
+            &:hover {
+                a:before {
+                    left: 63px;
+                }
+            }
+        }
+    }
+}
+
+.recent-post {
+    .normal-post {
+        .item {
+            .post-area {
+                .post-details {
+                    padding: 26px 20px 27px 20px;
+                    .post-head {
+                        a {
+                            font-size: 12px;
+                        }
+                    }
+                    .post-meta {
+                        margin-bottom: 0px;
+                    }
+                    p {
+                        margin-bottom: 8px;
+                    }
+                }
+            }
+        }
+    }
+    .recent-post-carousel.owl-theme {
+        .item {
+            .post-area {
+                .post-details {
+                    padding: 35px 20px 19px 20px;
+                    .post-head {
+                        a {
+                            font-size: 12px;
+                        }
+                    }
+                    .post-meta {
+                        margin-bottom: 0px;
+                    }
+                    p {
+                        margin-bottom: 8px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.our-services {
+    padding-bottom: 7px;
+    .services-box {
+        padding: 23px 20px 31px 20px;
+        min-height: 280px;
+        h4 {
+            font-size: 13px;
+        }
+    }
+}
+
+.our-specialist {
+    padding-top: 0px;
+}
+
+.contact-page-form {
+    padding-bottom: 145px;
+    .appoinment-form {
+        bottom: -40px;
+    }
+}
+
+.single-blog {
+    padding: 50px 0px;
+    .replay-form {
+        .replay-form-fields {
+            .form-group {
+                margin-bottom: 0px;
+                &.textarea-formgroup {
+                    min-height: 123px;
+                }
+            }
+
+        }
+    }
+}

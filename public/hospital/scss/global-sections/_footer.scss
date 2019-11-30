@@ -1,0 +1,100 @@
+/* -------------------------------------
+3 Global Sections - Footer
+---------------------------------------- */
+
+/* --------------------
+3.23 Section - Footer
+----------------------- */
+
+.footer {
+    background: #505050;
+    .footer-widget {
+        padding: 75px 0px;
+        h4 {
+            font-family: 'Source Sans Pro', sans-serif;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 38px;
+
+        }
+        .footer-about {
+            p {
+                font-family: 'Source Sans Pro', sans-serif;
+                font-weight: 600;
+                font-size: 14px;
+                color: #ddd;
+                margin: 0px;
+                padding-bottom: 40px;
+            }
+            ul {
+                li {
+                    color: #ddd;
+                    padding-bottom: 15px;
+                    font-family: 'Source Sans Pro', sans-serif;
+                    font-weight: 400;
+                    font-size: 14px;
+                    i {
+                        color: #ddd;
+                        margin-right: 20px;
+                        font-size: 18px;
+                        vertical-align: middle;
+                    }
+                    a {
+                        color: #ddd;
+                        &:hover {
+                            color: $primary_color;
+                        }
+                    }
+                }
+            }
+        }
+        .footer-nav-list {
+            ul {
+                li {
+                    padding-bottom: 15px;
+                    a {
+                        color: #ddd;
+                        font-family: 'Source Sans Pro', sans-serif;
+                        font-weight: 400;
+                        i {
+                            font-size: 18px;
+                            color: #ddd;
+                            margin-right: 10px;
+                            vertical-align: middle;
+                        }
+                        &:hover {
+                            color: $primary_color;
+                        }
+                        &:hover i {
+                            color: $primary_color;
+                        }
+                    }
+
+
+                }
+            }
+        }
+        .insta-widget {
+            figure {
+                overflow: hidden;
+                float: left;
+                a {
+                    img {
+                        margin-bottom: 20px;
+                        margin-right: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .copyright-container {
+        background: #404040;
+        p {
+            color: #dddddd;
+            padding: 29px 0px;
+            i {
+                font-size: 12px;
+            }
+        }
+    }
+}

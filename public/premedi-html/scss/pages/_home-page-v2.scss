@@ -1,0 +1,117 @@
+/* -------------------------------------
+2 Home page version 2 
+---------------------------------------- */
+
+/* --------------------
+ 2.1 Section - Banner
+----------------------- */
+
+.home-v2 .home-page-banner {
+    .image-caption {
+        padding-top: 243px;
+        h1 {
+            margin-bottom: 15px;
+
+        }
+        p {
+            color: #fff;
+            margin-bottom: 35px;
+            font-size: 16px;
+        }
+    }
+}
+
+/* --------------------
+ 2.2 Section - Oppoinment Form
+----------------------- */
+
+.home-v2 .appoinment-form {
+    bottom: -180px;
+    position: relative;
+    margin-top: 0px;
+    .appoinment-form-fields {
+        margin-top: 35px;
+        display: inline-block;
+        .form-group {
+            
+            .form-control {
+                &::before {
+                    content: "\eb25";
+                    font-family: icofont;
+                    font-style: normal;
+                    font-weight: normal;
+                }
+            }
+            .form-control::-webkit-input-placeholder {
+                /* Chrome/Opera/Safari */
+                color: #404040;
+            }
+            .form-control::-moz-placeholder {
+                /* Firefox 19+ */
+                color: #404040;
+            }
+            .form-control:-ms-input-placeholder {
+                /* IE 10+ */
+                color: #404040;
+            }
+            .form-control:-moz-placeholder {
+                /* Firefox 18- */
+                color: #404040;
+            }
+            .btn {
+                width: 100%;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+/* --------------------
+ 2.3 Section - Our Department
+----------------------- */
+
+.home-v2 .our-department {
+    padding-top: 254px;
+}
+
+/* --------------------
+ 2.4 Section - Our Services
+----------------------- */
+
+.home-v2 .our-services {
+    padding-bottom: 45px;
+    padding-top: 105px;
+}
+
+/* --------------------
+ 2.5 Section - Recent Post
+----------------------- */
+
+.home-v2 .recent-post {
+    padding-bottom: 90px;
+    .recent-post-carousel {
+        .owl-nav {
+            display: none;
+        }
+    }
+}
+
+
+/* --------------------
+ 2.6 Section - Our Specialist
+----------------------- */
+
+.home-v2 .our-specialist {
+    padding: 104px 0px 110px;
+}
+
+/* --------------------
+ 2.7 Section - Parents Feedback
+----------------------- */
+
+.home-v2 .parents-feedback {
+    .layer {
+        padding-top: 103px;
+    }
+
+}

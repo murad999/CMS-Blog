@@ -1,0 +1,198 @@
+/* -------------------------------------
+3 Global Sections - Our Specialist
+---------------------------------------- */
+
+/* --------------------
+3.7 Section - Our Specialist
+----------------------- */
+
+.our-specialist {
+    padding: 33px 0px 110px;
+    .top-text {
+        margin-bottom: 53px;
+    }
+    .our-specialist-carousel {
+        .owl-item > div {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .item {
+            display: inline-block;
+            box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+            .item-holder {
+                padding-bottom: 145px;
+                position: relative;
+                z-index: 1;
+                overflow: hidden;
+                .awsm-grid-holder {
+                    overflow: hidden;
+                    img {
+                        -webkit-transition: -webkit-transform 0.8s;
+                        -moz-transition: -moz-transform 0.8s;
+                        transition: transform 0.8s;
+                    }
+                    .item-data-holder {
+                        height: 150px;
+                        width: 100%;
+                        bottom: 0;
+                        position: absolute;
+                        padding: 30px 0px 30px;
+                        color: rgba(31, 31, 31, 1);
+                        text-align: center;
+                        overflow: hidden;
+                        -webkit-transition: height 0.4s;
+                        -moz-transition: height 0.4s;
+                        transition: height 0.4s;
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            bottom: 0;
+                            width: 100%;
+                            background: #06b2b6 !important;
+                            -webkit-transition: height 0.4s;
+                            -moz-transition: height 0.4s;
+                            transition: height 0.4s;
+                            left: 0;
+                        }
+                        .awsm-personal-info {
+                            position: relative;
+                            margin-bottom: 15px;
+                            p {
+                                font-family: 'Poppins', sans-serif;
+                                font-weight: 500;
+                            }
+                            .depart {
+                                font-family: 'Poppins', sans-serif;
+                                font-weight: 300;
+                                display: block;
+                                margin-bottom: 20px;
+                            }
+                            .doctor-name {
+                                margin-bottom: 22px;
+                                &::before {
+                                    content: "";
+                                    display: inline-block;
+                                    position: absolute;
+                                    left: 148px;
+                                    width: 15%;
+                                    height: 1px;
+                                    top: 30px;
+                                    background: #999;
+                                    right: 0;
+                                }
+                            }
+                        }
+                        .awsm-contact-info {
+                            opacity: 0;
+                            -webkit-transform: translateY(100%);
+                            -moz-transform: translateY(100%);
+                            -ms-transform: translateY(100%);
+                            transform: translateY(100%);
+                            -webkit-backface-visibility: hidden;
+                            -moz-backface-visibility: hidden;
+                            backface-visibility: hidden;
+                            -webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
+                            -moz-transition: -moz-transform 0.4s, opacity 0.1s;
+                            transition: transform 0.4s, opacity 0.1s;
+
+                        }
+                    }
+
+                }
+                &:hover {
+                    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+                    .awsm-grid-holder {
+                        .item-data-holder {
+                            .awsm-personal-info {
+                                .doctor-name {
+                                    color: #fff;
+                                    &::before {
+                                        background: #fff;
+                                    }
+                                }
+                                p {
+                                    color: #fff;
+                                }
+                                .depart {
+                                    color: #fff;
+                                }
+                            }
+                        }
+
+                    }
+
+                }
+                &:hover img {
+                    -moz-transform: scale(1.1);
+                    -webkit-transform: scale(1.1);
+                    -o-transform: scale(1.1);
+                    -ms-transform: scale(1.1);
+                    transform: scale(1.1);
+                }
+                &:hover .item-data-holder {
+                    height: 186px;
+                    color: #fff;
+                }
+                &:hover {
+                    .awsm-grid-holder {
+                        .item-data-holder {
+                            .awsm-contact-info {
+                                opacity: 1;
+                                -webkit-transform: translateY(0px);
+                                -moz-transform: translateY(0px);
+                                -ms-transform: translateY(0px);
+                                transform: translateY(0px);
+                                -webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
+                                -moz-transition: -moz-transform 0.4s, opacity 0.1s;
+                                transition: transform 0.4s, opacity 0.1s;
+                            }
+                        }
+                    }
+                }
+                &:hover .item-data-holder::before {
+                    height: 100%;
+                    -webkit-transition: height 0.2s;
+                    -moz-transition: height 0.2s;
+                    transition: height 0.2s;
+                    background: #06b2b6 !important;
+                }
+            }
+        }
+        .owl-nav,
+        .owl-dot {
+            display: none;
+        }
+    }
+    .customNavigation {
+        text-align: center;
+        margin-top: 37px;
+        .customPrevBtn,
+        .customNextBtn {
+            background: #404040;
+            padding: 5px 20px;
+            font-size: 25px; //position: absolute;
+            &:hover {
+                background: $primary_color;
+                color: #fff;
+            }
+        }
+        .customPrevBtn {
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 0px;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            margin-right: 7px;
+        }
+        .customNextBtn {
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            margin-left: 7px;
+        }
+        .btn-default {
+            border-radius: 0px;
+            padding-top: 12px;
+        }
+    }
+}

@@ -1,0 +1,49 @@
+/* -------------------------------------
+3 Global Sections - Our Services 
+---------------------------------------- */
+
+/* --------------------
+3.5 Section - Our Services
+----------------------- */
+.our-services {
+    padding: 104px 0px 47px;
+    background: #f4f4f4;
+    .top-text{
+        h2{
+            margin-bottom: 3px;
+        }
+    }
+    .services-box {
+        background: #fff;
+        padding: 23px 35px 31px 35px;
+        margin-bottom: 60px;
+        box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
+        i {
+            font-size: 25px;
+            border: 1px solid $primary_color;
+            display: inline-block;
+            padding: 25px;
+            border-radius: 16px;
+            margin-bottom: 21px;
+        }
+        h4 {
+            color: #505050;
+            margin-bottom: 13px;
+        }
+        p {
+            color: #606060;
+            line-height: 22px;
+        }
+        &:hover{
+            box-shadow: 0px 2px 5px 3px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.2s ease-in-out;
+            i{
+                background: $primary_color;
+                color:#fff;
+            }
+            h4{
+                color:$primary_color;
+            }
+        }
+    }
+}
